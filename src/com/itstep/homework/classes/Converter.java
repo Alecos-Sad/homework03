@@ -25,15 +25,21 @@ public class Converter {
         return newWord;
     }
 
-    public static void checkLetter(String englishStr) {
-        int count = 0;
+    public static StringBuilder checkLetter(String englishStr) {
+        int countEng = 0;
+        int countRus = 0;
+        StringBuilder example = new StringBuilder(englishStr);
         for (int i = 0; i < englishStr.length(); i++) {
             char ch = englishStr.charAt(i);
-            if (ch >= 'a' && ch <= 'z'){
-                count ++;
+            if ((ch >= 'a' && ch <= 'z') || ch >= 'A' && ch <= 'Z') {
+                countEng++;
+            } else if ((ch >= 'а' && ch <= 'я') || ch >= 'А' && ch <= 'Я') {
+                countRus++;
             }
         }
-        System.out.println(count);
-
+        if(countEng > countRus){
+            return convert(englishStr);
+        }
+        return example;
     }
 }
