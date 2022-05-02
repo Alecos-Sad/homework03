@@ -2,6 +2,7 @@ package com.itstep.homework.task;
 
 import com.itstep.homework.breakfast.*;
 import com.itstep.homework.classes.*;
+import com.itstep.homework.game_person.AnimalPerson;
 import com.itstep.homework.game_person.EquipPerson;
 import com.itstep.homework.game_person.GamePerson;
 import com.itstep.homework.game_person.ItemsPerson;
@@ -176,10 +177,7 @@ public class Homework {
      */
     public void task12() {
         // твой код: start
-        GamePerson alex= new GamePerson("Sad",1,1);
-
-
-
+        GamePerson alex = new GamePerson("Sad", 1, 1);
         System.out.println(alex);
         // твой код: end
     }
