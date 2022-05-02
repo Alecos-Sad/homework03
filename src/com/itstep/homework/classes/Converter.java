@@ -14,6 +14,8 @@ public class Converter {
                 for (int j = 0; j < english.length; j++) {
                     if (Character.toString(englishStr.charAt(i)).equals(english[j])) {
                         newWord = newWord.append(russian[j]);
+                    } else {
+                        continue;
                     }
                 }
             } else {
@@ -23,7 +25,15 @@ public class Converter {
         return newWord;
     }
 
-    public static void checkLetter(){
-        System.out.println("example work");
+    public static void checkLetter(String englishStr) {
+        int count = 0;
+        for (int i = 0; i < englishStr.length(); i++) {
+            char ch = englishStr.charAt(i);
+            if (ch >= 'a' && ch <= 'z'){
+                count ++;
+            }
+        }
+        System.out.println(count);
+
     }
 }

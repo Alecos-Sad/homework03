@@ -153,7 +153,7 @@ public class Homework {
      */
     public void task10() {
         // твой код: start
-        System.out.println(Converter.convert("cfljd//**ков"));
+        System.out.println(Converter.convert("лрплаghjkgigig++++"));
         // твой код: end
     }
 
@@ -163,7 +163,7 @@ public class Homework {
      */
     public void task11() {
         // твой код: start
-
+        Converter.checkLetter("");
         // твой код: end
     }
 
