@@ -24,6 +24,6 @@ public class Converter {
     }
 
     public static void checkLetter(){
-
+        System.out.println("example work");
     }
 }
