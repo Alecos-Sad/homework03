@@ -22,4 +22,8 @@ public class Converter {
         }
         return newWord;
     }
+
+    public static void checkLetter(){
+
+    }
 }
