@@ -5,7 +5,6 @@ public class Converter {
     private static String[] english = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"};
     private static String[] russian = {"й", "ц", "у", "к", "е", "н", "г", "ш", "щ", "з", "ф", "ы", "в", "а", "п", "р", "о", "л", "д", "я", "ч", "с", "м", "и", "т", "ь"};
 
-
     public static StringBuilder convert(String englishStr) {
 
         StringBuilder newWord = new StringBuilder("");

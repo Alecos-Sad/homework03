@@ -8,6 +8,7 @@ public class EquipPerson {
     String sword;
 
     public EquipPerson(String head, String chest, String legs, String sword) {
+
         this.head = head;
         this.chest = chest;
         this.legs = legs;

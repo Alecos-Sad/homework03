@@ -4,11 +4,11 @@ package com.itstep.homework.game_person;
 public class ItemsPerson {
 
     String knife;
-    String bootleCognjak;
+    String bootle;
 
-    public ItemsPerson(String knife, String bootleCognjak) {
+    public ItemsPerson(String knife, String bootle) {
         this.knife = knife;
-        this.bootleCognjak = bootleCognjak;
+        this.bootle = bootle;
     }
 
     public String getKnife() {
@@ -19,19 +19,19 @@ public class ItemsPerson {
         this.knife = knife;
     }
 
-    public String getBootleCognjak() {
-        return bootleCognjak;
+    public String getBootle() {
+        return bootle;
     }
 
-    public void setBootleCognjak(String bootleCognjak) {
-        this.bootleCognjak = bootleCognjak;
+    public void setBootle(String bootle) {
+        this.bootle = bootle;
     }
 
     @Override
     public String toString() {
         return "ItemsPerson{" +
                 "knife='" + knife + '\'' +
-                ", bootleCognjak='" + bootleCognjak + '\'' +
+                ", bootleCognjak='" + bootle + '\'' +
                 '}';
     }
 }
