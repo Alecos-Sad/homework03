@@ -2,22 +2,24 @@ package com.itstep.homework.breakfast;
 
 public class Sousage {
 
-    String animal;
+   private SousageMade sousageMade;
 
-    public Sousage(String animal) {
-        this.animal = animal;
+    public Sousage(SousageMade sousageMade) {
+        this.sousageMade = sousageMade;
     }
 
-    public String getAnimal() {
-        return animal;
+    public SousageMade getSousageMade() {
+        return sousageMade;
     }
 
-    public void setAnimal(String animal) {
-        this.animal = animal;
+    public void setSousageMade(SousageMade sousageMade) {
+        this.sousageMade = sousageMade;
     }
 
     @Override
     public String toString() {
-        return "Sousage is " + animal;
+        return "Sousage{" +
+                "sousageMade=" + sousageMade +
+                '}';
     }
 }

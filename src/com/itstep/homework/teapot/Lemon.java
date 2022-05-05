@@ -8,8 +8,8 @@ public class Lemon {
     public Lemon() {
     }
 
-    public Lemon(String color, int size) {
-        this.color = color;
+    public Lemon(int size) {
+        this.color = "Yellow";
         this.size = size;
     }
 

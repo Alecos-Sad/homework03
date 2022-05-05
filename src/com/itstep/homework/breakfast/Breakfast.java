@@ -2,12 +2,13 @@ package com.itstep.homework.breakfast;
 
 public class Breakfast {
 
-    Sandwich sandwich;
-    Tea tea;
+    private Sandwich sandwich;
+    private Tea tea;
 
-    public Breakfast(Sandwich sandwich, Tea tea) {
-        this.sandwich = sandwich;
-        this.tea = tea;
+
+    public Breakfast() {
+        this.sandwich = SandwichMade.getSandwich();
+        this.tea = TeaMade.getTea();
     }
 
     public Sandwich getSandwich() {

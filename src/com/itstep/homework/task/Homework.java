@@ -60,15 +60,7 @@ public class Homework {
      */
     public void task4() {
         // твой код: start
-        Water water = new Water("Hot");
-        Sugar sugar = new Sugar("White");
-        Leaf leaf = new Leaf("Large");
-        Tea tea = new Tea(water, sugar, leaf);
-        Bread bread = new Bread("Black");
-        Butter butter = new Butter("Creamy");
-        Sousage sousage = new Sousage("Pork");
-        Sandwich sandwich = new Sandwich(bread, butter, sousage);
-        Breakfast breakfast = new Breakfast(sandwich, tea);
+        Breakfast breakfast = new Breakfast();
         System.out.println(breakfast);
         // твой код: end
     }
@@ -78,12 +70,7 @@ public class Homework {
      */
     public void task5() {
         // твой код: start
-        Water water = new Water("Hot");
-        Leaf leaf = new Leaf("Large");
-        Honey honey = new Honey("Bee");
-        Lemon lemon = new Lemon("Yellow", 2);
-        Teapot teapot = new Teapot(water, leaf, lemon, honey);
-        System.out.println(teapot.cook());
+        System.out.println(Teapot.cookTea());
         // твой код: end
     }
 

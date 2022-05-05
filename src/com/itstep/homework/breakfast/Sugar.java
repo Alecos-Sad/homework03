@@ -2,25 +2,35 @@ package com.itstep.homework.breakfast;
 
 public class Sugar {
 
-    String color;
+    String colorSugar;
+    SugarForms sugarForms;
 
-    public Sugar() {
+    public Sugar(String colorSugar, SugarForms sugarForms) {
+        this.colorSugar = colorSugar;
+        this.sugarForms = sugarForms;
     }
 
-    public Sugar(String color) {
-        this.color = color;
+    public String getColorSugar() {
+        return colorSugar;
     }
 
-    public String getColor() {
-        return color;
+    public void setColorSugar(String colorSugar) {
+        this.colorSugar = colorSugar;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public SugarForms getSugarForms() {
+        return sugarForms;
+    }
+
+    public void setSugarForms(SugarForms sugarForms) {
+        this.sugarForms = sugarForms;
     }
 
     @Override
     public String toString() {
-        return "Sugar is " + color;
+        return "Sugar{" +
+                "colorSugar='" + colorSugar + '\'' +
+                ", sugarForms=" + sugarForms +
+                '}';
     }
 }

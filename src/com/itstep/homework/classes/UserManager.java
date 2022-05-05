@@ -30,19 +30,19 @@ public class UserManager {
         return adress;
     }
 
-    public void addPhoneNumber(String phonenumber){
+    public void addPhoneNumber(String phonenumber) {
         phoneNumbersList.add(phonenumber);
     }
-    public void addEmail(String email){
+
+    public void addEmail(String email) {
         emailList.add(email);
     }
-    public void addSkype(String skype){
+
+    public void addSkype(String skype) {
         skypeList.add(skype);
     }
-    public void printUser(){
-        System.out.println(phoneNumbersList);
-        System.out.println(emailList);
-        System.out.println(skypeList);
-        System.out.println(adress);
+
+    public void printUser() {
+        System.out.println(phoneNumbersList + " " + emailList + " " + skypeList + " " + adress);
     }
 }

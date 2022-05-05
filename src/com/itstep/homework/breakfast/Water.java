@@ -2,25 +2,24 @@ package com.itstep.homework.breakfast;
 
 public class Water {
 
-    String water;
+       private WaterTemperature waterTemperature;
 
-    public Water() {
+    public Water(WaterTemperature waterTemperature) {
+        this.waterTemperature = waterTemperature;
     }
 
-    public Water(String water) {
-        this.water = water;
+    public WaterTemperature getWaterTemperature() {
+        return waterTemperature;
     }
 
-    public String getWater() {
-        return water;
-    }
-
-    public void setWater() {
-        this.water = water;
+    public void setWaterTemperature(WaterTemperature waterTemperature) {
+        this.waterTemperature = waterTemperature;
     }
 
     @Override
     public String toString() {
-        return "Water is " + water;
+        return "Water{" +
+                "waterTemperature=" + waterTemperature +
+                '}';
     }
 }

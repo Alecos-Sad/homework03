@@ -2,22 +2,24 @@ package com.itstep.homework.breakfast;
 
 public class Bread {
 
-    String color;
+BreadColor breadColor;
 
-    public Bread(String color) {
-        this.color = color;
+    public Bread(BreadColor breadColor) {
+        this.breadColor = breadColor;
     }
 
-    public String getColor() {
-        return color;
+    public BreadColor getBreadColor() {
+        return breadColor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setBreadColor(BreadColor breadColor) {
+        this.breadColor = breadColor;
     }
 
     @Override
     public String toString() {
-        return "Bread is " + color;
+        return "Bread{" +
+                "breadColor=" + breadColor +
+                '}';
     }
 }

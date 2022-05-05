@@ -2,12 +2,9 @@ package com.itstep.homework.breakfast;
 
 public class Sandwich {
 
-    Bread bread;
-    Butter butter;
-    Sousage sausage;
-
-    public Sandwich() {
-    }
+    private Bread bread;
+    private Butter butter;
+    private Sousage sausage;
 
     public Sandwich(Bread bread, Butter butter, Sousage sausage) {
         this.bread = bread;
@@ -41,6 +38,10 @@ public class Sandwich {
 
     @Override
     public String toString() {
-        return "Sandwich is " + bread + butter + sausage;
+        return "Sandwich{" +
+                "bread=" + bread +
+                ", butter=" + butter +
+                ", sausage=" + sausage +
+                '}';
     }
 }

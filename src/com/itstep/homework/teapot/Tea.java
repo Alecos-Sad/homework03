@@ -4,18 +4,17 @@ import com.itstep.homework.breakfast.Leaf;
 import com.itstep.homework.breakfast.Water;
 
 public class Tea {
-    Water water;
-    Leaf leaf;
-    Lemon lemon;
-    Honey honey;
 
+    private Water water;
+    private Leaf leaf;
+    private Honey honey;
+    private Lemon lemon;
 
-
-    public Tea(Water water, Leaf leaf, Lemon lemon, Honey honey) {
+    public Tea(Water water, Leaf leaf, Honey honey, Lemon lemon) {
         this.water = water;
         this.leaf = leaf;
-        this.lemon = lemon;
         this.honey = honey;
+        this.lemon = lemon;
     }
 
     public Water getWater() {
@@ -34,14 +33,6 @@ public class Tea {
         this.leaf = leaf;
     }
 
-    public Lemon getLemon() {
-        return lemon;
-    }
-
-    public void setLemon(Lemon lemon) {
-        this.lemon = lemon;
-    }
-
     public Honey getHoney() {
         return honey;
     }
@@ -50,13 +41,21 @@ public class Tea {
         this.honey = honey;
     }
 
+    public Lemon getLemon() {
+        return lemon;
+    }
+
+    public void setLemon(Lemon lemon) {
+        this.lemon = lemon;
+    }
+
     @Override
     public String toString() {
         return "Tea{" +
                 "water=" + water +
                 ", leaf=" + leaf +
-                ", lemon=" + lemon +
                 ", honey=" + honey +
+                ", lemon=" + lemon +
                 '}';
     }
 }

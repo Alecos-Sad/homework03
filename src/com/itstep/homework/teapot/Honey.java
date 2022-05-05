@@ -4,11 +4,8 @@ public class Honey {
 
     String name;
 
-    public Honey(String name) {
-        this.name = name;
-    }
-
     public Honey() {
+        this.name = "Bee";
     }
 
     public String getName() {

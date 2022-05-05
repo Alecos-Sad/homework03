@@ -2,9 +2,9 @@ package com.itstep.homework.breakfast;
 
 public class Tea {
 
-    Water water;
-    Sugar sugar;
-    Leaf leaf;
+  private Water water;
+  private Sugar sugar;
+  private Leaf leaf;
 
     public Tea(Water water, Sugar sugar, Leaf leaf) {
         this.water = water;
@@ -38,6 +38,10 @@ public class Tea {
 
     @Override
     public String toString() {
-        return "Tea is " + water + sugar + leaf;
+        return "Tea{" +
+                "water=" + water +
+                ", sugar=" + sugar +
+                ", leaf=" + leaf +
+                '}';
     }
 }

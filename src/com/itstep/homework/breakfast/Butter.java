@@ -5,8 +5,8 @@ public class Butter {
     String creamy;
 
 
-    public Butter(String creamy) {
-        this.creamy = creamy;
+    public Butter() {
+        this.creamy = "Creamy";
     }
 
     public String getCreamy() {
@@ -19,7 +19,9 @@ public class Butter {
 
     @Override
     public String toString() {
-        return "Butter is " + creamy;
+        return "Butter{" +
+                "creamy='" + creamy + '\'' +
+                '}';
     }
 }
 
