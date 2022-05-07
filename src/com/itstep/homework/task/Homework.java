@@ -114,10 +114,14 @@ public class Homework {
      */
     public void task8() {
         // твой код: start
-        Man adam = new Man("Adam", 'M');
-        Woman eva = new Woman("Eva");
-        Family family = new Family(adam, eva);
-        family.result();
+        Adam adam = new Adam();
+        Eva eva = new Eva();
+        System.out.println(adam);
+        System.out.println(eva);
+        adam.setEva(new Eva());
+        eva.setAdam(new Adam());
+        System.out.println(adam);
+        System.out.println(eva);
         // твой код: end
     }
 
