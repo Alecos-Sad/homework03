@@ -5,7 +5,6 @@ public class Eva {
     private Adam adam;
 
     public Eva() {
-        this.adam = adam;
     }
 
     public void setAdam(Adam adam) {

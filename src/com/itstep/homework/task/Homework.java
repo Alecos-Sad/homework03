@@ -1,11 +1,12 @@
 package com.itstep.homework.task;
 
 import com.itstep.homework.breakfast.*;
+import com.itstep.homework.breakfast.operation.Operation;
 import com.itstep.homework.classes.*;
 import com.itstep.homework.game_person.GamePerson;
-import com.itstep.homework.teapot.Honey;
-import com.itstep.homework.teapot.Lemon;
 import com.itstep.homework.teapot.Teapot;
+
+import java.util.Arrays;
 
 /**
  * homework 03
@@ -114,14 +115,9 @@ public class Homework {
      */
     public void task8() {
         // твой код: start
-        Adam adam = new Adam();
         Eva eva = new Eva();
+        Adam adam = new Adam(eva);
         System.out.println(adam);
-        System.out.println(eva);
-        adam.setEva(new Eva());
-        eva.setAdam(new Adam());
-        System.out.println(adam);
-        System.out.println(eva);
         // твой код: end
     }
 
@@ -180,7 +176,9 @@ public class Homework {
      */
     public void task13() {
         // твой код: start
-
+        String str = " ()99(((dfgdfg)))sfs";
+        int coutBrackets = Operation.bracketCount(str);
+        System.out.println(coutBrackets);
         // твой код: end
     }
 
@@ -190,7 +188,9 @@ public class Homework {
      */
     public void task14() {
         // твой код: start
-
+        String str = "hhh(ALEXANDER)n,n,";
+        str = Operation.retBetweenBrackets(str);
+        System.out.println(str);
         // твой код: end
     }
 
@@ -201,7 +201,9 @@ public class Homework {
      */
     public void task15() {
         // твой код: start
-
+        String str = "1.23+4.56";
+        double result = Operation.RetFirstNumber();
+        System.out.println(result);
         // твой код: end
     }
 
@@ -210,7 +212,9 @@ public class Homework {
      */
     public void task16() {
         // твой код: start
-
+        String str = "1.23+4.56";
+        double result = Operation.RetSecondNumber();
+        System.out.println(result);
         // твой код: end
     }
 
@@ -219,9 +223,8 @@ public class Homework {
      * и сложить два числа
      */
     public void task17() {
-        String result = ""; // запиши сюда результат вычислений
+        String result = "" + Operation.addRetNumbers(); // запиши сюда результат вычислений
         // твой код: start
-
         // твой код: end
         System.out.println("5.79".equalsIgnoreCase(result) ? "решение правильное" : "решение неправильное");
     }
@@ -233,7 +236,8 @@ public class Homework {
      */
     public void task18() {
         // твой код: start
-
+        String duplicates = Operation.removeDuplicates("saaaa999dddd888ff11gghhdrtyuy");
+        System.out.println(duplicates);
         // твой код: end
     }
 
@@ -243,7 +247,8 @@ public class Homework {
      */
     public void task19() {
         // твой код: start
-
+        String removeDigit = Operation.removeDigit("sdfsdf8989sdfsdf");
+        System.out.println(Operation.removeDigit(removeDigit));
         // твой код: end
     }
 
@@ -253,7 +258,8 @@ public class Homework {
      */
     public void task20() {
         // твой код: start
-
+        boolean checkNumber = Operation.isCheckNumber("-9879879.789");
+        System.out.println(checkNumber);
         // твой код: end
     }
 
@@ -265,7 +271,8 @@ public class Homework {
      */
     public void task21() {
         // твой код: start
-
+        boolean isBracketCorrect = Operation.isBracketsCorrect(" )SadovNick)");
+        System.out.println(isBracketCorrect);
         // твой код: end
     }
 
@@ -276,7 +283,9 @@ public class Homework {
      */
     public void task22() {
         // твой код: start
-
+        String str = "Sadov(Nick)";
+        boolean result = Operation.isHasBrackets(str);
+        System.out.println(result);
         // твой код: end
     }
 
@@ -285,7 +294,9 @@ public class Homework {
      */
     public void task23() {
         // твой код: start
-
+        String str = "Sadov(Nick)";
+        boolean result = Operation.isHasBracketsInvert(str);
+        System.out.println(result);
         // твой код: end
     }
 
@@ -295,7 +306,8 @@ public class Homework {
      */
     public void task24() {
         // твой код: start
-
+        String str = "1+2*3+4";
+        System.out.println(Operation.replaceStrUniv(str));
         // твой код: end
     }
 
@@ -315,7 +327,8 @@ public class Homework {
      */
     public void task25() {
         // твой код: start
-
+        String str = "1.2+3.4*5.6+7.8";
+        System.out.println(Operation.replaceStrUniv(str));
         // твой код: end
     }
 
@@ -326,7 +339,8 @@ public class Homework {
      */
     public void task26() {
         // твой код: start
-
+        String str = Operation.equationInsideBrackets("1+(269-3)+4)");
+        System.out.println(str);
         // твой код: end
     }
 
@@ -337,7 +351,8 @@ public class Homework {
      */
     public void task27() {
         // твой код: start
-
+        String str = "711/2333";
+        System.out.println(Operation.numLeftSymbol(str));
         // твой код: end
     }
 
@@ -348,7 +363,8 @@ public class Homework {
      */
     public void task28() {
         // твой код: start
-
+        String str = "-7.2002202*2333";
+        System.out.println(Operation.numLeftSymbol(str));
         // твой код: end
     }
 
@@ -359,7 +375,8 @@ public class Homework {
      */
     public void task29() {
         // твой код: start
-
+        String str = "7.11*23.335";
+        System.out.println(Operation.numRightSymbol(str));
         // твой код: end
     }
 
@@ -378,7 +395,15 @@ public class Homework {
      */
     public void task30() {
         // твой код: start
-
+        System.out.println(Operation.isCheckNumber("0"));
+        System.out.println(Operation.isCheckNumber("1"));
+        System.out.println(Operation.isCheckNumber("1-"));
+        System.out.println(Operation.isCheckNumber("-1"));
+        System.out.println(Operation.isCheckNumber("-1.2"));
+        System.out.println(Operation.isCheckNumber("-1.2."));
+        System.out.println(Operation.isCheckNumber(".1.2."));
+        System.out.println(Operation.isCheckNumber(".-1.2."));
+        System.out.println(Operation.isCheckNumber("+123"));
         // твой код: end
     }
 }

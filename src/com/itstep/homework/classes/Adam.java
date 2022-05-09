@@ -4,13 +4,15 @@ public class Adam {
 
     private Eva eva;
 
-    public Adam() {
+
+    public Adam(Eva eva) {
         this.eva = eva;
     }
 
     public void setEva(Eva eva) {
         this.eva = eva;
     }
+
 
     @Override
     public String toString() {
